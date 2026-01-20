@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let products = [
+            { id: 1, title: 'p1', category: 'cloth', thumnail: '' },
+            { id: 2, title: 'p2', category: 'cloth', thumnail: '' },
+            { id: 3, title: 'p3', category: 'watch', thumnail: '' },
+
+        ]
+        //yesko thru chai html ma prinnt hunchha js.. (use document.write)
+        products.map(a=>document.write(`
+            <h3>${a.title} </h3>
+            <img src=${a.thumnail}>
+
+        `))
+    </script>
+</body>
+
+</html>
