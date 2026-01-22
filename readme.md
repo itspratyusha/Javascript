@@ -3,3 +3,7 @@ find filter map is imp (array.js)
 //filter le chai sabbai lai array ma print garchha like >20 is 30 & 90 so tyo duitai [30,90] print hunchha
 //map le chai new array ma lanchha like prev array ma +5 thapesi new array banchha tei print garchha
 //one by one print garne bhaye map use garda hunchha
+
+
+-class thapne 
+//addclass removeclass and toogle(on off jasto)

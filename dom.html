@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Document object model
+    <h2>Demo</h2> <h2>h</h2>
+    <div class="demo">hello</div>
+    <div class="abc">hi</div>
+    <script>
+        console.log(document.getElementsByTagName('h2'))
+        console.log(document.getElementsByClassName('demo'))
+        console.log(document.getElementById('abc'))
+        //or
+        console.log(document.querySelector('h2'))
+        console.log(document.querySelector('.demo'))
+        console.log(document.querySelector('#abc'))
+        console.log(document.querySelectorAll('h2')[1]) //yesle chai sabbb h2 lai fetch garchha
+
+    </script>
+</body>
+</html>

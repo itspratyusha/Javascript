@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to DOM website</h1>
+    <button onclick="document.querySelector('h1').innerText='helllooooo'">Click me!!</button>
+
+    <img id="a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqqo3VPin0t_42a1ew_4PSPTVyMGJoPUsoyw&s" alt="">
+    <button onclick="document.querySelector('#a').src='https://www.popsci.com/wp-content/uploads/2018/12/10/QKOPUFKJMVV7JE2YNBCV2FILFQ.jpg?quality=85&w=2048'">Click</button>
+
+    <input type="password" name="" id="pass">
+    <button onclick="aa()" id="btna"></button>
+    <script>
+        function aa(){
+            if(document.querySelector('#pass').type=='password')
+        {
+            document.querySelector('#pass').type='text'
+             document.querySelector('#btna').innertext='hide'
+
+        }
+        else{
+             document.querySelector('#pass').type='password'
+              document.querySelector('#btna').innerText='show'
+        }
+        }
+    </script>
+</body>
+</html>

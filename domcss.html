@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="demo">
+        Welcome all 
+     <!-- css uses in dom to change color and all -->
+    </div>
+    <button onclick="document.querySelector('.demo').style.display='none'">hide</button>
+    <button onclick="document.querySelector('.demo').style.display='block'">show</button>
+    <button onclick="document.querySelector('.demo').style.fontSize='88px'">Font-s</button>
+    <button onclick="document.querySelector('.demo').style.color='red'">Color</button>
+    <button onclick="document.querySelector('.demo').style.background='aqua'">Bg</button>
+
+    <button onclick="document.querySelector('.demo').classList.add('ll')">AddClass</button>
+    <button onclick="document.querySelector('.demo').classList.remove('ll')">RemoveClass</button>
+    <button onclick="document.querySelector('.demo').classList.toggle('ll')">ToggleClass</button> <!-- toggle bhany aaune jane(on off kinda) -->
+
+    <style>
+        .ll{
+            background: red;
+            color: bisque;
+            font-size: 77px;
+        }
+    </style>
+</body>
+</html>
