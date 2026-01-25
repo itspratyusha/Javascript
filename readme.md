@@ -7,3 +7,8 @@ find filter map is imp (array.js)
 
 -class thapne 
 //addclass removeclass and toogle(on off jasto)
+-
+-slick js
+-owl js
+-swiper js (latest)
+-nice select

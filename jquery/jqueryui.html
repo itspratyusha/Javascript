@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+    <!-- draggable ko ui ma gayera css link line to style -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <div class="box"></div>
+
+    <ol>
+        <li>about</li>
+        <li>home</li>
+    </ol>
+
+    <input id="date">
+
+    <div id="dispcollapse">
+        <h3>titlee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, exercitationem?</p>
+         <h3>titlee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, exercitationem?</p>
+         <h3>titlee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, exercitationem?</p>
+         <h3>titlee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, exercitationem?</p>
+    </div>
+    
+    <div class="tab">
+        <ul>
+            <li><a href="#tab1">home</a></li>
+            <li><a href="#tab2">about</a></li>  
+        </ul>
+        <div id="tab1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, incidunt tempora? Odio, ipsum. Molestias quia quos qui accusantium voluptatem, voluptas itaque error maxime, reiciendis in natus ipsum sint iste laborum.
+        </div>
+        <div id="tab2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.
+    </div>
+    </div>
+    <!-- go to jquery ui website and copy the script link from dragabble section source for jquery ui -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script> 
+
+  <script>
+    $(".box").draggable() //box lai dragg garera sarna milchha
+    $("ol").sortable() //tala mathi garera sarna milchha
+    $("#date").datepicker() //date pick garne
+    $("#dispcollapse").accordion() //accordion: Displays collapsible content (aauta h3 thichda tyo colllapse hune ani hicheko wala khulline)
+    $(".tab").tabs() //aauta tab1(home) thichda tesko content dekhaune ani tab2(about) thichda tyo content dekhaune
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{height: 1990px;}
+        header{width: 100%; height: 200px; background: purple; position: fixed; top: 0; left: 0; transition: 0.9s;}
+        .switch{background: palevioletred; height: 100px;}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="https://jcss-cdn.kathmandupost.com/assets/images/logos/thekathmandupost-logo-white.png" class="logo" alt="">
+    </header>
+    <script>
+        window.addEventListener('scroll',()=>{
+            if(scrollY>200)
+        {
+            document.querySelector("header").classList.add("switch");
+            document.querySelector(".logo").src='https://foodmandu.com/img/logo-n.png';
+        }
+        else
+        {
+            document.querySelector("header").classList.remove("switch");
+            document.querySelector(".logo").src='https://jcss-cdn.kathmandupost.com/assets/images/logos/thekathmandupost-logo-white.png';
+        }
+        })
+    </script>
+</body>
+</html>

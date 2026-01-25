@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        aside{width: 200px; height: 100vh; background: red; position: fixed; left: -200px; top: 0; transition: 0.9s;}
+        .left{left: 0;}
+        .aa{margin-left: 200px;}
+        button{transition: 0.9s;}
+
+         .bar1, .bar2, .bar3 {
+            width: 17px;
+            height: 2px;
+            background-color: #000;
+            margin: 2px 0;
+            transition: 0.9s;
+        }
+        .new .bar2 {
+            opacity: 0; visibility: hidden;
+        }
+        .new .bar1 {
+            transform: rotate(45deg) translate(4px, 3px);
+        }
+        .new .bar3 {
+            transform: rotate(-45deg) translate(2px, -2px);
+        }
+        
+    </style>
+</head>
+<body>
+    <button onclick="abc()" id="a">Menu</button>
+    <aside></aside>
+    <script>
+        function abc(){
+            document.querySelector("aside").classList.toggle("left");
+            document.getElementById("a").classList.toggle("aa");
+        }
+        
+    </script>
+
+</body>
+</html>
