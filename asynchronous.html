@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //synchronous => line by line execution
+        console.log("one");
+        console.log("two");
+        console.log("three");
+        //asynchronous => same time multi tasking
+        //setTimeout(function, time in milliseconds)
+        setTimeout(() => {
+            console.log("hello nepal");
+        }, 3000);
+        console.log("hello india");
+
+        //callback function- function bhitra function pass garne
+        console.log("buy food")
+        function cookFood(callback){
+            console.log("cook food");
+            callback();
+        }
+        function eatFood(){
+            console.log("eat food");
+        }
+        setTimeout(cookFood, 3000, eatFood)
+
+
+        //promises(hune nahune)
+        //then(sucess) catch(fail) jbhayeni o/p falne(finally)
+
+        let meropromise= new Promise ((resolve, reject)=>{
+            if(2==2){
+                resolve("promise resolved");
+            } else {
+                reject("promise rejected");
+            }
+        });
+        console.log(meropromise);//or better ways
+        //meropromise.then(a=> console.log('sss')).catch(a=> console.log("failed")).finally(a=>console.log("final result"));
+        //backend le api dinchha taba promises need
+        //fetch important vvimp thru promses
+        //fetch('https://dummyjson.com/products').then(a=>a.json()).then(b=>console.log(b.products)).catch(()=>console.log("error")); //then(b=>console.log(b.products)) le chai array malanchha
+        //a.json()- convert garne json ma i.e. human le bujh ne form ma
+
+        //async await
+        async function abcd(){
+            let data= await meropromise;
+            console.log(data);
+        }
+
+        //fetch thru async await
+        async function getproduct(){
+            let d=await fetch('https://dummyjson.com/products')
+            let r=await d.json()
+            console.log(r.products)
+        }
+        getproduct()
+//array destructure
+let fruits=["apple", "banana", "mango"];
+console.log(fruits[1]); //old process
+
+let [a, b, c]=fruits; //new process
+console.log(a); 
+console.log(b);
+
+//object destructure
+let person={name: "ram", age: 25, country: "nepal"};//old process
+console.log(person.name);
+let{name, age, country}=person; //new process
+console.log(name);
+</script>
+
+</body>
+</html>
