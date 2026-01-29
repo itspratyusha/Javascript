@@ -7,7 +7,7 @@ function App() {
   return( 
   <>
   <Header />
-  <div className="grid gap-4 grid-cols-3">
+  <div className="grid gap-4 grid-cols-3 py-4">
   <Services title="SEO" />
    <Services title="WEB" />
     <Services title="JAVA" />

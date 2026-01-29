@@ -1,4 +1,4 @@
-let category=[["electronics","jewelery","men's clothing","women's clothing"]]
+let category = ["electronics","jewelery","men's clothing","women's clothing"]
 function Header() {
   return( 
   <>
